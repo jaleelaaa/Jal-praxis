@@ -1,0 +1,23 @@
+{
+  "title": "Trustable AI Interactions Engineering",
+  "pages": [
+    "trustworthy-ai-in-b2b-systems",
+    "expectations-engineering-uat",
+    "markdown-html-as-trust-layer",
+    "markdown-html-native-source-doc-strategy",
+    "custom-document-transformation-script",
+    "context-engineering-ai-prompting",
+    "vector-db-enterprise-rag-strategy",
+    "multi-layered-retrieval-verifiable-ai",
+    "conversational-ux",
+    "feedback-loops",
+    "surveilr-as-ingestion-layer",
+    "surveilr-sql-native-grounding",
+    "backend-design-with-mcp-and-anythingllm",
+    "roles-ai-native-engineering",
+    "ai-gateway",
+    "text-to-sql",
+    "spry-literate-programming"
+  ]
+}
+
