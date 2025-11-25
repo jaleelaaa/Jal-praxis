@@ -25,15 +25,16 @@ jobs:
       - name: Install dependencies
         run: npm install
 
-      - name: Build Fumadocs
-        run: |
-          npm run build
-          npm run export
+      - name: Build (static export)
+        run: npm run build
+
+      - name: Verify build output
+        run: ls -R
 
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
-          path: ./out
+          path: ./out   # <-- this folder must exist after `npm run build`
 
   deploy:
     needs: build
