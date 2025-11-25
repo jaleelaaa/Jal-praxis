@@ -1,0 +1,29 @@
+services:
+  # Web Service for Next.js application
+  - type: web
+    name: praxis-netspective-docs
+    runtime: node
+    region: oregon # You can change this to your preferred region
+    plan: free # Start with free tier, upgrade as needed
+
+    # Build configuration
+    buildCommand: pnpm install && pnpm run build
+    startCommand: pnpm start
+
+    # Environment configuration
+    envVars:
+      - key: NODE_VERSION
+        value: 20
+      - key: NODE_ENV
+        value: production
+      - key: PORT
+        value: 3000
+
+    # Health check configuration
+    healthCheckPath: /
+
+    # Auto-deploy configuration
+    autoDeploy: true # Automatically deploy on push to main branch
+
+    # Branch configuration
+    branch: main
