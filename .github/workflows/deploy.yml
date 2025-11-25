@@ -28,13 +28,13 @@ jobs:
       - name: Build (static export)
         run: npm run build
 
-      - name: Verify build output
-        run: ls -R
+      - name: Verify output
+        run: ls -R build
 
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
-          path: ./out   # <-- this folder must exist after `npm run build`
+          path: ./build   # <-- Correct output folder
 
   deploy:
     needs: build
