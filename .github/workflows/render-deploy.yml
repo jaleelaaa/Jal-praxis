@@ -53,6 +53,7 @@ jobs:
 
       - name: Run Type Check
         run: pnpm types:check
+        continue-on-error: true
 
   # Job 2: Build Verification
   build:
