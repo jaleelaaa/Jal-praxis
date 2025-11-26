@@ -8,7 +8,7 @@ services:
 
     # Build configuration
     buildCommand: pnpm install && pnpm run build
-    startCommand: node .next/standalone/server.js
+    startCommand: pnpm start
 
     # Environment configuration
     envVars:
